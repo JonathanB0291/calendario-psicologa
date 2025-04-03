@@ -1,6 +1,6 @@
 {
   "name": "mi-pagina-psicologa",
-  "homepage": "/calendario-psicologa/",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && netlify deploy"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
