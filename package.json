@@ -1,6 +1,6 @@
 {
   "name": "mi-pagina-psicologa",
-  "homepage": "https://JonathanB0291.github.io/calendario-psicologa",
+  "homepage": "/calendario-psicologa/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
