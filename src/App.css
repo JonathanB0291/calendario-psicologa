@@ -1,0 +1,179 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #a8c0ff, #3f4c6b); /* Fondo más oscuro y cálido */
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3498db; /* Azul brillante en hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5; /* Fondo neutro más claro */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #131b22; /* Color más oscuro para los encabezados */
+  text-align: center;
+  font-size: 2.5rem; /* Aumenté el tamaño para mayor impacto */
+  margin-bottom: 1.5rem; /* Un poco más de espacio abajo */
+}
+
+h2, h3, p {
+  color: #2c3e50; /* Texto oscuro para mejor legibilidad */
+  line-height: 1.6;
+}
+
+/* Estilo general para los botones */
+button {
+  background-color: #2980b9; /* Azul oscuro */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #3498db; /* Azul brillante al hacer hover */
+  transform: translateY(-3px); /* Efecto de levantamiento */
+}
+
+button:active {
+  transform: translateY(0); /* Al hacer click, el botón vuelve a su lugar */
+}
+
+/* Estilo para las tarjetas */
+.card {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave para las tarjetas */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+}
+
+.card p {
+  color: #34495e; /* Color gris oscuro para el texto dentro de la card */
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: rotate(15deg); /* Agregado un pequeño giro al logo */
+}
+
+
+.react-calendar {
+  font-family: 'Arial', sans-serif;
+  background-color: #739c9c; /* Fondo más claro para el calendario */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Meses */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__months {
+  color: #0c0d0e; /* Color oscuro para los meses */
+  font-size: 1.2rem; /* Aumentar el tamaño de la fuente para que se vea mejor */
+  font-weight: bold; /* Poner en negrita */
+  text-align: center;
+}
+
+/* Flechas de navegación de meses */
+.react-calendar__navigation__prev2,
+.react-calendar__navigation__next2 {
+  color: #13181b; /* Azul brillante para las flechas */
+  font-size: 1.5rem; /* Hacer las flechas más grandes */
+  transition: color 0.3s ease;
+}
+
+.react-calendar__navigation__prev2:hover,
+.react-calendar__navigation__next2:hover {
+  color: #101315; /* Color azul brillante al hacer hover */
+}
+
+/* Flechas de navegación de años */
+.react-calendar__navigation__prev,
+.react-calendar__navigation__next {
+  color: #171e22; /* Azul brillante para las flechas de año */
+  font-size: 1.2rem; /* Tamaño de las flechas */
+  transition: color 0.3s ease;
+}
+
+.react-calendar__navigation__prev:hover,
+.react-calendar__navigation__next:hover {
+  color: #101214; /* Color azul brillante al hacer hover */
+}
+
+/* Estilo para los días del calendario */
+.react-calendar__tile {
+  color: #2c3e50; /* Color oscuro para los días */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+  background-color: #0b0c0d; /* Azul brillante en hover */
+  color: rgb(50, 35, 35); /* Cambiar el color de texto a blanco en hover */
+  border-radius: 50%;
+}
+
+/* Días deshabilitados */
+.react-calendar__tile:disabled {
+  color: #697984; /* Color gris para los días deshabilitados */
+}
+
+/* Para los fines de semana, resaltarlos con un color diferente */
+.react-calendar__tile--weekend {
+  color: #a42517; /* Rojo brillante para los fines de semana */
+}
+
+
+/* Estilo para el footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff; /* Fondo blanco para el footer */
+  border-radius: 8px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el footer */
+}
+
+.read-the-docs {
+  color: #888;
+}
