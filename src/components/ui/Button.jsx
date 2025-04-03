@@ -1,11 +1,10 @@
-import React from "react";
-
-const Button = ({ children, onClick }) => {
+function App() {
   return (
-    <button className="bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition-transform transform hover:scale-105">
-        Agendar Cita
-    </button>
+    <div>
+      <h1>Agendar Cita</h1>
+      <Button onClick={() => console.log("Cita agendada")} />
+    </div>
   );
-};
+}
 
-export default Button;
+export default App;
